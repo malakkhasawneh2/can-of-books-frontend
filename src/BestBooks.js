@@ -20,7 +20,7 @@ class MyFavoriteBooks extends React.Component {
     const { user } = this.props.auth0;
     const email = user.email;
     axios
-    .get(`http://localhost:3001/getBooks?email=${email}`)
+    .get(`http://localhost:3010/getBooks?email=${email}`)
     .then( result =>{
       this.setState({
         favBooksArr:result.data
