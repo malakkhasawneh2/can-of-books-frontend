@@ -10,6 +10,7 @@ this app to signe pepole in the page and take information from thim to show the 
 
 ## Getting Started
 clone the repo then start play with it to rendar the login button and logout
+add list of fivert book
 <!-- What are the steps that a user must take in order to build this app on their own machine and get it running? -->
 
 ## Architecture
@@ -18,15 +19,17 @@ react app
 Auth0 librarie
 js language
 netlify
+mongo
 <!-- Provide a detailed description of the application design. What technologies (languages, libraries, etc) you're using, and any other relevant design information. -->
 
 ## Change Log
-12/9/2021 Application now has finish 
+13/9/2021 Application now has finish 
 <!-- Use this area to document the iterative changes made to your application as each feature is successfully implemented. Use time stamps. Here's an example:
 
 01-01-2001 4:59pm - Application now has a fully-functional express server, with a GET route for the location resource. -->
 
 ## Credit and Collaborations
+aseel help me in Carousels
 
 Name of feature: _Authenticat_
 
@@ -34,9 +37,9 @@ Estimate of time needed to complete: 1
 
 Start time: 1
 
-Finish time: 3
+Finish time: 6
 
-Actual time needed to complete: 1:30 hour
+Actual time needed to complete: 4:30 hour
 
 # Start your own "Can of Books" App
 
