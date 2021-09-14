@@ -1,10 +1,59 @@
 import React from 'react';
-import Carousel from 'react-bootstrap/Carousel';
+// import Carousel from 'react-bootstrap/Carousel';
+import Card from 'react-bootstrap/Card';
+import Col from 'react-bootstrap/Col';
+import Row from 'react-bootstrap/Row';
+import Button from 'react-bootstrap/Button';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './BookItem.css';
+
 class BookItem extends React.Component {
-    render() {
-        return (
-<div>
+  render() {
+    return (
+
+      <div className='bookItem'>
+
+        <Row xs={1} md={3} className="g-4">
+          {this.props.Book.map(item =>
+            <Col>
+              <Card style={{ width: '18rem' }}>
+                <Card.Body>
+                  <Card.Title> {item.title}</Card.Title>
+                  <Card.Text>
+                    {item.description}
+                    {item.email}
+
+                    {item.status}
+                  </Card.Text>
+
+                </Card.Body>
+                <Button variant="primary" onClick={() => this.props.deleteBook(item._id)}> Delete</Button>
+              </Card>
+            </Col>
+          )}</Row>
+
+
+
+
+        {/* <p>{this.props.item.title}</p>
+          <p>{this.props.item.description}</p>
+          <p>{this.props.item.status}</p>
+
+          <button onClick={() => this.props.deleteBook(this.props.item._id)}>Delete</button> */}
+      </div>
+    )
+  }
+}
+
+
+
+
+
+
+
+
+{/* <div>
+  
          
          <Carousel width='20%'>
                {this.props.Book.map((item,key)=>
@@ -31,10 +80,10 @@ class BookItem extends React.Component {
                )}
          
           </Carousel>
-          </div>
-         )
-     }
- }//             <>
+          </div> */}
+//      )
+//  }
+//  }//             <>
 
 //                 {/* <p>{this.props.item.title}</p>
 //                 <img src={this.props.item.imgUrl} />
