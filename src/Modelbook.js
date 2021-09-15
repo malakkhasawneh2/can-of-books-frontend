@@ -3,8 +3,6 @@ import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import Form from 'react-bootstrap/Form'
 
-
-
 class Modelbook extends Component {
     render() {
         return (
@@ -34,11 +32,6 @@ class Modelbook extends Component {
 
                                 <Form.Label>status</Form.Label>
                                 <Form.Control type="text" name="status" placeholder="Enter the status" />
-                                <option>Select status:</option>
-                                <option value="all">All</option>
-                                <option value="1">Free</option>
-                                <option value="2">5 stars</option>
-                                <option value="3">recommanded</option>
                             </Form.Group>
                             <Button variant="primary" type="submit">
                                 Add the book
@@ -58,6 +51,12 @@ class Modelbook extends Component {
 
                     </Modal.Footer>
                 </Modal>
+                {/* <Form.Select aria-label="Default select example">
+                                    <option>Open this select menu</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </Form.Select> */}
 
 
 

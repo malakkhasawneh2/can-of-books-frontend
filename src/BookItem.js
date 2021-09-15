@@ -22,12 +22,16 @@ class BookItem extends React.Component {
                   <Card.Text>
                     {item.description}
                     {item.email}
+                    </Card.Text>
+
+                    <Card.Text>
 
                     {item.status}
                   </Card.Text>
 
                 </Card.Body>
                 <Button variant="primary" onClick={() => this.props.deleteBook(item._id)}> Delete</Button>
+                <Button variant="primary" onClick={()=>this.props.handelupdateForm(item)}>Update Information</Button>
               </Card>
             </Col>
           )}</Row>
